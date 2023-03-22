@@ -1,0 +1,199 @@
+@charset "UTF-8"; body {
+    font-family: "Avenir","sans-serif";
+    color: #4D4C4C;
+    text-align: center;
+    margin: 0;
+}
+
+h1,h2 {
+    font-size: 3.75rem;
+    font-weight: normal;
+    /*文字の太さ*/
+}
+
+a {
+    text-decoration: none;
+    /*リンクタグの下線を消す*/
+    color: white;
+}
+
+header {
+    background: linear-gradient(#75BDD3,#55c4BB);
+    display: inline-block;
+    color: white;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 12px;
+}
+
+nav ul li::after {
+    content: "";
+    display: block;
+    background-color: #6AEDC8;
+    height: 3px;
+    width: 70%;
+    transform: translate(15%);
+}
+
+.firstview {
+    display: flex;
+    width: 70%;
+    margin: 150px 15%;
+}
+
+.firstview-img {
+    width: 40%;
+}
+
+.firstview-img img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 5%;
+    border: 2px solid #ffff;
+}
+
+.firstview-text {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding: 0 10%;
+}
+
+.firstview-text h1 {
+    border-bottom : 3px solid #6AEDC8;
+}
+
+.firstview-text p {
+    font-size: 20px;
+}
+
+.section-img {
+    width: 22%;
+    margin-bottom: 50px;
+}
+
+.about-text {
+    width: 56%;
+    margin: 20px auto;
+}
+
+.about-icons img {
+    width: 32px;
+    margin: 2%;
+}
+
+#Projects {
+    background-color: #53BD9D;
+    padding: 200px 0;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+    color: white;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+
+.project-card {
+    width: 33%;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-links {
+    display: flex;
+}
+
+.project-link {
+    padding: 5px;
+    border: 2px solid #ffff;
+    margin: 5px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    margin: auto;
+}
+
+.contact-card {
+    width: 33%;
+    border-top: 10px solid #53BD9D;
+    background-color: #F5F4F4;
+    position: relative;
+}
+
+.contact-card img {
+    width: 15%;
+    padding-top: 30px ;
+}
+
+.contact-card p {
+    margin-top: 30px;
+    width: auto;
+}
+
+footer {
+    margin-top: 300px;
+    padding: 30px;
+    background-color: #F5F4F4;
+    font-size: small;
+}
+
+.contact-card h3::after {
+    content: "";
+    display: block;
+    background-color: #707070;
+    height: 1.5%;
+    width: 10%;
+    transform: translate(450%,300%);
+    position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+    .firstview {
+        display: block;
+        width: 70%;
+        margin: 150px 15%;
+    }
+
+    .firstview-img {
+        width: 108%;
+    }
+
+    .firstview-img img {
+        width: 50%;
+    }
+
+    .contact-cards {
+        display: block;
+    }
+
+    .project-card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-cards {
+        display: block;
+    }
+
+    .contact-card {
+        width: 100%;
+        position: relative;
+        margin-bottom: 75px;
+        padding-bottom: 35px;
+    }
+}
