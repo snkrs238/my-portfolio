@@ -83,6 +83,7 @@ nav ul li::after {
 .about-text {
     width: 56%;
     margin: 20px auto;
+    text-align: left;
 }
 
 .about-icons img {
